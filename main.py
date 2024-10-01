@@ -48,18 +48,18 @@ if "chat_history" not in st.session_state:
          },
     ]
 
-# Modify style
-hide_streamlit_style = """
-    <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
-    ._hostedName_1upux_12 {visibility: hidden;}
-    </style>
-    """
+# # Modify style
+# hide_streamlit_style = """
+#     <style>
+#     #MainMenu {visibility: hidden;}
+#     footer {visibility: hidden;}
+#     header {visibility: hidden;}
+#     ._hostedName_1upux_12 {visibility: hidden;}
+#     </style>
+#     """
 
-# Hide components of Streamlit
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+# # Hide components of Streamlit
+# st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
 
