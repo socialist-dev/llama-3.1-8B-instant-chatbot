@@ -56,7 +56,7 @@ hide_streamlit_style = """
 
 # Hide components of Streamlit
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-
+st.hide_streamlit_style = True
 
 
 # page title
