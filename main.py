@@ -3,17 +3,17 @@ from dotenv import dotenv_values
 import streamlit as st
 from groq import Groq
 
-# # Link style.css to modify css of streamlit
-# with open('style.css') as f:
-#     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+# Link style.css to modify css of streamlit
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-# Đọc file CSS
-def load_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+# # Đọc file CSS
+# def load_css(file_name):
+#     with open(file_name) as f:
+#         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-# Chèn file style.css
-load_css("style.css")
+# # Chèn file style.css
+# load_css("style.css")
 
 
 def parse_groq_stream(stream):
