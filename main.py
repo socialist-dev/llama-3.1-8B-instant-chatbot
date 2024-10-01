@@ -54,7 +54,7 @@ hide_streamlit_style = """
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
-    .st-footer {visibility: hidden;}
+    ._hostedName_1upux_12 {visibility: hidden;}
     </style>
     """
 
