@@ -60,7 +60,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
 # page title
-st.title("Hey Buddy!")
+st.title("Hello!")
 st.caption("Let's go back in time...")
 # the messages in chat_history will be stored as {"role":"user/assistant", "content":"msg}
 # display chat history
