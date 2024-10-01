@@ -54,7 +54,7 @@ hide_streamlit_style = """
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
-    div.st-emotion-cache-vj1c9o {visibility: hidden;}
+    div._container_1upux_1 {visibility: hidden;}
     </style>
     """
 
