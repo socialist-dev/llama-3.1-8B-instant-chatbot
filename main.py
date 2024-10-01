@@ -18,9 +18,9 @@ st.set_page_config(
     layout="centered",
 )
 
-# Link style.css to modify css of streamlit
-with open('style.css') as f:
-    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+# # Link style.css to modify css of streamlit
+# with open('style.css') as f:
+#     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 try:
     secrets = dotenv_values(".env")  # for dev env
@@ -54,6 +54,7 @@ hide_streamlit_style = """
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
+    ._container_1upux_1 {visibility: hidden;}
     </style>
     """
 
