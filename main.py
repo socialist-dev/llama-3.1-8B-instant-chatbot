@@ -3,6 +3,18 @@ from dotenv import dotenv_values
 import streamlit as st
 from groq import Groq
 
+# # Link style.css to modify css of streamlit
+# with open('style.css') as f:
+#     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
+# Đọc file CSS
+def load_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# Chèn file style.css
+load_css("style.css")
+
 
 def parse_groq_stream(stream):
     for chunk in stream:
@@ -13,8 +25,8 @@ def parse_groq_stream(stream):
 
 # streamlit page configuration
 st.set_page_config(
-    page_title="The 70's Painter",
-    page_icon="🎨",
+    page_title="Productivity Assistant",
+    page_icon="⚡",
     layout="centered",
 )
 
@@ -45,18 +57,18 @@ if "chat_history" not in st.session_state:
          },
     ]
 
-# Modify style
-hide_streamlit_style = """
-    <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
-    </style>
-    """
+# # Modify style
+# hide_streamlit_style = """
+#     <style>
+#     #MainMenu {visibility: hidden;}
+#     footer {visibility: hidden;}
+#     header {visibility: hidden;}
+#     </style>
+#     """
 
-# Hide components of Streamlit
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-st.hide_streamlit_style = True
+# # Hide components of Streamlit
+# st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 
 
 # page title
