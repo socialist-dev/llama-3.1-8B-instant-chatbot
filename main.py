@@ -18,6 +18,9 @@ st.set_page_config(
     layout="centered",
 )
 
+# Link style.css to modify css of streamlit
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 try:
     secrets = dotenv_values(".env")  # for dev env
