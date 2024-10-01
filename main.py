@@ -54,7 +54,8 @@ hide_streamlit_style = """
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
-    div._container_1upux_1 {visibility: hidden; display:none;}
+    div._hostedName_1upux_12 {visibility: hidden !important;}
+    div._container_1upux_1 {visibility: hidden; display:none !important;}
     div._streamlitAppContainer_nim44_1._embed_nim44_18 {visibility: hidden;}
     </style>
     """
