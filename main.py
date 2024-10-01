@@ -48,22 +48,24 @@ if "chat_history" not in st.session_state:
          },
     ]
 
-# Modify style
-hide_streamlit_style = """
-    <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    header {visibility: hidden;}
-    div._hostedName_1upux_12 {visibility: hidden !important;}
-    div._container_1upux_1 {visibility: hidden; display:none !important;}
-    div._streamlitAppContainer_nim44_1._embed_nim44_18 {visibility: hidden;}
-    </style>
-    """
+# # Modify style
+# hide_streamlit_style = """
+#     <style>
+#     #MainMenu {visibility: hidden;}
+#     footer {visibility: hidden;}
+#     header {visibility: hidden;}
+#     div._hostedName_1upux_12 {visibility: hidden !important;}
+#     div._container_1upux_1 {visibility: hidden; display:none !important;}
+#     div._streamlitAppContainer_nim44_1._embed_nim44_18 {visibility: hidden;}
+#     </style>
+#     """
 
-# Hide components of Streamlit
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+# # Hide components of Streamlit
+# st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-
+# Link style.css to modify css of streamlit
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 # page title
 st.title("Hello!")
